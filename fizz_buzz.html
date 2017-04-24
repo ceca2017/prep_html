@@ -1,0 +1,27 @@
+Fizz Buzz stuff
+
+<div id="number">
+
+</div>
+
+<script>
+  function fizz_buzz(number){
+    //console.log('number = ' + number);
+    const numberDiv = document.querySelector('#number');
+    if ((number%15) == 0) {
+      console.log('fizz_buzz');
+      numberDiv.innerHTML = number + " = fizz buzz";
+    } else if (number%5 == 0) {
+      console.log('buzz');
+      numberDiv.innerHTML = number + " = buzz";
+    }
+    else if (number%3==0) {
+      console.log('fizz');
+      numberDiv.innerHTML = number + " = fizz";
+    }
+    else {
+      console.log(number);
+      numberDiv.innerHTML = number + " = " + number
+    }
+  }
+</script>
